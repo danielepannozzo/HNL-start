@@ -33,17 +33,7 @@ int main() {
 
         tmp1.SetPtEtaPhiM(*signal.Muon_pt, *signal.Muon_eta, *signal.Muon_phi, 105.658);
 
-        /*tmp1.SetPhi(signal.Muon_phi);
-        tmp1.SetEta(signal.Muon_eta);
-        tmp1.SetPt(signal.Muon_pt);
-        tmp1.SetM(105.658);*/
-
         tmp2.SetPtEtaPhiM(*signal.ProbeTracks_pt, *signal.ProbeTracks_eta, *signal.ProbeTracks_phi, 139.57);
-
-        /*tmp2.SetPhi(signal.ProbeTracks_phi);
-        tmp2.SetEta(signal.ProbeTracks_eta);
-        tmp2.SetPt(signal.ProbeTracks_pt);
-        tmp2.SetM(139.57);*/
 
         mass=tmp1*tmp2;
         h1->Fill(mass);
